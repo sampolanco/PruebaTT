@@ -14,6 +14,7 @@ var express=require('express'),
 	viewsDir=path.join(__dirname, 'views'),
 	iconoURL=path.join(publicDir,'images', 'icono.ico'),
 	port=(process.env.PORT || 3000),//obtener el puerto del proceso, si no el 3000
+	ipAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
 	app=express(),
 	pgp = require("pg-promise")(/*options*/),//--------Conexion con DB
 	db=require('./controllers/conexion.js'),

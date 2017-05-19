@@ -30,6 +30,7 @@ app
 	.set('views',viewsDir) 
 	.set('view engine', 'jade')
 	.set('port',port)
+	.set('ipAddress',ipAddress)
 	//ejecutando middlewares
 	.use(cookieParser())
 	.use(cookieSession({secret: 'abcd1234'}))

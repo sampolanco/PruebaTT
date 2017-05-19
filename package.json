@@ -1,0 +1,27 @@
+{
+  "name": "pestmap",
+  "version": "1.0.0",
+  "description": "TT2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "author": "@samuel",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0",
+    "pg-promise": "^5.5.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {}
+}

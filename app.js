@@ -17,7 +17,6 @@ var express=require('express'),
 	ipAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
 	app=express(),
 	pgp = require("pg-promise")(/*options*/),//--------Conexion con DB
-	db=require('./controllers/conexion.js'),
 	bodyParser=require("body-parser"), 
 	cookieParser = require('cookie-parser'),
 	cookieSession = require('cookie-session');
@@ -37,11 +36,6 @@ app
 	.use(express.static(publicDir))
 	.use(favicon(iconoURL))
 	.use('/',login)
-	.use('/map',map)
-	.use('/invitado',invitado)
-	.use('/manual',manual)
-	.use('/user',user)
-	.use('/punto',puntos)
 	//.use('/about',about);
 
 module.exports=app;

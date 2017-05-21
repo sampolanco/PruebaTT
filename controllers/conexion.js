@@ -1,11 +1,11 @@
 var pgp = require("pg-promise")(/*options*/);
 var cn = {
-    host: 'localhost',
+    host: 'postgresql://postgresql/',
     port: 5432,
     //database: 'postgres',
-    database: 'pestMapDataBase',
-    user: 'postgres',
-    password: 'logan6012'
+    database: 'pestDataBase',
+    user: 'userUYG',
+    password: 'Am5aBWqsmfDpYyAG'
 };
 var db = pgp(cn);
 db.one("SELECT $1 AS value", 123)
